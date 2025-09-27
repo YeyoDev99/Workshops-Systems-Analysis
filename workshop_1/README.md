@@ -1,34 +1,42 @@
-# Workshop 1 — Systems Analysis (Summary)
 
-## Competition Overview
-- **Competition chosen:** <name + URL>  
-- **Goal:** Predict <target> given dataset with <features>.  
-- **Dataset:** Train/test CSV files, features (numeric/categorical), target variable.  
-- **Constraints:** Limited submissions, evaluation metric (e.g., log-loss, RMSE).
+## 📝 Workshop 1 — Web Traffic Time Series Forecasting
 
-## Systemic Analysis
-- **Elements:** datasets, preprocessing, feature engineering, models, evaluation, submission.  
-- **Relationships:** data → preprocessing → model → validation → submission.  
-- **Boundaries:** Kaggle environment, compute resources, rules.
+### 🎯 Competition Overview
+- **Competition:** [Web Traffic Time Series Forecasting](https://www.kaggle.com/competitions/web-traffic-time-series-forecasting)
+- **Objective:** Predict daily traffic for 145,000 Wikipedia pages (60-day horizon)
+- **Dataset:** Time series data from July 1, 2015 to September 10, 2017
+- **Evaluation Metric:** SMAPE (Symmetric Mean Absolute Percentage Error)
+- **Submission Format:** CSV with 145,000 rows × 60 columns of integer predictions
 
-## Systems Engineering Perspective
-- **Requirements:** reproducibility, correct metric implementation, robustness.  
-- **Architecture:** data ingestion → preprocessing → model training → validation → submission.  
-- **Lifecycle:** versioning, experiment tracking, retraining.
+### 🔍 Systemic Analysis
 
-## Sensitivity & Complexity
-- **Sensitivity:** performance varies with hyperparameters, features, random seeds.  
-- **Techniques:** cross-validation, ablation, bootstrap, permutation importance.  
-- **Chaos/Complexity:** leaderboard overfitting, small data noise → large performance swings.
+#### System Elements
+- **Historical Data:** 145K time series with 800+ daily observations
+- **Page Metadata:** Language, project type, access method, agent type
+- **External Factors:** Holidays, viral events, Wikipedia maintenance
+- **Processing Components:** Preprocessing, feature engineering, models, validation
 
-## Conclusion
-- Strong dataset foundation but sensitive to modeling choices.  
-- Nonlinear and chaotic aspects appear in feature interactions and leaderboard feedback.  
-- Systems thinking helps to structure workflows, reduce risks, and ensure robustness.
+#### Key Relationships
+Raw Data → Preprocessing → Feature Engineering → Model Training → Validation → Submission
+#### System Boundaries
+- Kaggle competition constraints 
+- Fixed historical data period
+- SMAPE evaluation metric
 
-## Visual (example in Mermaid)
+### 🌊 Data Flow Diagram
+
 ```mermaid
-flowchart LR
-  A[Data] --> B[Preprocessing] --> C[Features]
-  C --> D[Model Training] --> E[Validation]
-  E --> F[Submission]
+graph TD
+    A[📊 Raw Historical Data] --> B[🔧 Preprocessing]
+    B --> C[⚙️ Feature Engineering]
+    C --> D[🤖 ML Models]
+    D --> E[📈 Forecasts]
+    E --> F[📋 SMAPE Evaluation]
+    F --> G{Acceptable Quality?}
+    G -->|Yes| H[🚀 Deployment]
+    G -->|No| D
+    H --> I[📤 Kaggle Submission]
+    
+    J[🌐 External Events] --> C
+    K[📱 Page Metadata] --> C
+    L[🗓️ Temporal Data] --> C
