@@ -35,13 +35,13 @@ Build upon the systems analysis from **Workshop 1** to create a robust **system 
 
 ---
 
-## **Workshop 2 Development Process Update** 🛠️
+## Workshop 2 Development Process Update
 
-The system design was developed following the principles of **Modular Monolith** architecture and incorporating strategies to mitigate the non-linear "chaos factors" identified in Workshop 1 (e.g., viral spikes, ambiguous missing data).
+The system design was developed following the principles of **Modular Monolith** architecture and incorporating strategies to mitigate the non-linear "**chaos factors**" identified in Workshop 1 (e.g., viral spikes, ambiguous missing data).
 
 ### Key Design Outcomes:
 
 * **Architecture:** A **Chain of Responsibility** pattern was implemented for the data flow, ensuring strict sequential execution and data validation between the 8 main modules (Ingestion to Evaluation).
 * **Chaos Mitigation:** A **Hierarchical Ensemble** approach was designed, using the **Strategy Pattern** to dynamically select the best base model (ARIMA, Prophet, LSTM) based on the specific characteristics and volatility of each Wikipedia article.
-* **Scalability:** The stack relies on **Python** with parallel processing tools like **Joblib** to meet the NFR of processing 145,000 time series efficiently.
+* **Scalability:** The stack relies on **Python** with parallel processing tools like **Joblib** to meet the Non-Functional Requirement (NFR) of processing 145,000 time series efficiently.
 * **Design Diagrams:** Comprehensive **Architecture Diagrams** (High-Level Flow, Subsystem Breakdown for Training, and Subsystem Breakdown for Inference/Evaluation) have been created and are referenced in the final PDF to illustrate the system's modularity and iterative feedback loops.
