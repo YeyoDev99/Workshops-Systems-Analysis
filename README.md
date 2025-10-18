@@ -6,9 +6,11 @@ Each workshop includes analysis, diagrams, and final reports in PDF format.
 ## 📂 Repository Structure
 workshops/
 ├── workshop1/ # Workshop 1 - Web Traffic Forecasting
-│ └── analysis.pdf
-├── workshop2/ # Workshop 2 - [To be defined]
-│ └── analysis.pdf 
+│ ├── Workshop 1.pdf
+│ ├──  README.md
+├── workshop2/ # Workshop 2 - Systems Design
+│ ├── Workshop 2.pdf
+│ ├──  README.md
 └── README.md
 
 
