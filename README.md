@@ -4,15 +4,19 @@ This repository contains the deliverables for the **Systems Analysis & Design** 
 Each workshop includes analysis, diagrams, and final reports in PDF format.
 
 ## 📂 Repository Structure
+
+```
 workshops/
 ├── workshop1/ # Workshop 1 - Web Traffic Forecasting
 │ ├── Workshop 1.pdf
-│ ├──  README.md
+│ └── README.md
+│
 ├── workshop2/ # Workshop 2 - Systems Design
 │ ├── Workshop 2.pdf
-│ ├──  README.md
+│ └── README.md
+│
 └── README.md
-
+```
 
 ## 👥 Team Members
 - **Julian David Celis Giraldo** - Code: 20222020023
