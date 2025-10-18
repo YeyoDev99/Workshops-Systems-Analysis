@@ -45,27 +45,3 @@ The system design was developed following the principles of **Modular Monolith**
 * **Chaos Mitigation:** A **Hierarchical Ensemble** approach was designed, using the **Strategy Pattern** to dynamically select the best base model (ARIMA, Prophet, LSTM) based on the specific characteristics and volatility of each Wikipedia article.
 * **Scalability:** The stack relies on **Python** with parallel processing tools like **Joblib** to meet the NFR of processing 145,000 time series efficiently.
 * **Design Diagrams:** Comprehensive **Architecture Diagrams** (High-Level Flow, Subsystem Breakdown for Training, and Subsystem Breakdown for Inference/Evaluation) have been created and are referenced in the final PDF to illustrate the system's modularity and iterative feedback loops.
-
----
-
-## Deliverables
-
-- **System Design Document (PDF)** → stored in \texttt{workshop2/} (or \texttt{Workshop\_2\_Design/}).
-- **README.md update** → explaining process, diagrams, and linking to final PDF.
-- **Diagrams** → System architecture, data flow, and module interactions.
-
-\textbf{[Link to Final PDF Document: Workshop\_2\_System\_Design.pdf]}
-
----
-
-## Deadline
-📅 **October 18th, 2025 — 12:00 PM**
-Late submissions may incur penalties.
-
----
-
-## Notes
-- Report must be in **English** and in **PDF format**.
-- Must reference **Workshop 1 outcomes**.
-- Emphasize how **chaos theory** and **sensitivity analysis** informed the design.
-- The use of the \texttt{ydata-profiling} tool (and associated \texttt{requirements.txt}) demonstrates the initial commitment to **Data Quality** and **EDA** in the Python stack.
