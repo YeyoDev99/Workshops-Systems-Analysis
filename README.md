@@ -3,18 +3,21 @@
 This repository contains the deliverables for the **Systems Analysis & Design** course.  
 Each workshop includes analysis, diagrams, and final reports in PDF format.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 workshops/
-├── workshop1/ # Workshop 1 - Web Traffic Forecasting
+├── workshop_1/ # Workshop 1 - Web Traffic Forecasting
 │ ├── Workshop 1.pdf
 │ └── README.md
 │
-├── workshop2/ # Workshop 2 - Systems Design
+├── Workshop_2_Design/ # Workshop 2 - Systems Design
 │ ├── Workshop 2.pdf
 │ └── README.md
 │
+├── Workshop-3/ # Workshop 3 - Robust Design & Project Management
+│ ├── Workshop 3.pdf
+│ └── README.md
 └── README.md
 ```
 
