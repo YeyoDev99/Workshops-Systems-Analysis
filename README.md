@@ -7,7 +7,7 @@ Each workshop includes analysis, diagrams, and final reports in PDF format.
 
 ```
 workshops/
-├── workshop_1/ # Workshop 1 - Web Traffic Forecasting
+├── workshop_1/ # Workshop 1 - Web Traffic Forecasting (System Analysis)
 │ ├── Workshop 1.pdf
 │ └── README.md
 │
@@ -18,7 +18,12 @@ workshops/
 ├── Workshop-3/ # Workshop 3 - Robust Design & Project Management
 │ ├── Workshop 3.pdf
 │ └── README.md
-└── README.md
+│
+├── Workshop_4_Simulation/ # Workshop 4 - Kaggle System Simulation
+│ ├── Workshop 4.pdf
+│ └── README.md
+│
+└── README.md # Base repository README
 ```
 
 ## 👥 Team Members
